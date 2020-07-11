@@ -1,0 +1,7 @@
+{% for obj in  object_list %}
+    <p>{{ obj.name}}</p>
+    {% for book in obj.books.all %}
+    {{ book }} <-- Book<br>
+    {% endfor %}
+{% endfor %}
+=======
